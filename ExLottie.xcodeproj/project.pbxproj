@@ -14,6 +14,8 @@
 		4AF7B99B2C7A1FB1004F45B0 /* ExLottieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7B99A2C7A1FB1004F45B0 /* ExLottieTests.swift */; };
 		4AF7B9A52C7A1FB1004F45B0 /* ExLottieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7B9A42C7A1FB1004F45B0 /* ExLottieUITests.swift */; };
 		4AF7B9A72C7A1FB1004F45B0 /* ExLottieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF7B9A62C7A1FB1004F45B0 /* ExLottieUITestsLaunchTests.swift */; };
+		4AF7B9B42C7A1FBA004F45B0 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AF7B9B32C7A1FBA004F45B0 /* sample.json */; };
+		4AF7B9B72C7A2074004F45B0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4AF7B9B62C7A2074004F45B0 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		4AF7B9A02C7A1FB1004F45B0 /* ExLottieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExLottieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF7B9A42C7A1FB1004F45B0 /* ExLottieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExLottieUITests.swift; sourceTree = "<group>"; };
 		4AF7B9A62C7A1FB1004F45B0 /* ExLottieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExLottieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AF7B9B32C7A1FBA004F45B0 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF7B9B72C7A2074004F45B0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 		4AF7B9882C7A1FB0004F45B0 /* ExLottie */ = {
 			isa = PBXGroup;
 			children = (
+				4AF7B9B32C7A1FBA004F45B0 /* sample.json */,
 				4AF7B9892C7A1FB0004F45B0 /* ExLottieApp.swift */,
 				4AF7B98B2C7A1FB0004F45B0 /* ContentView.swift */,
 				4AF7B98D2C7A1FB1004F45B0 /* Assets.xcassets */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = ExLottie;
+			packageProductDependencies = (
+				4AF7B9B62C7A2074004F45B0 /* Lottie */,
+			);
 			productName = ExLottie;
 			productReference = 4AF7B9862C7A1FB0004F45B0 /* ExLottie.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 4AF7B97D2C7A1FB0004F45B0;
+			packageReferences = (
+				4AF7B9B52C7A2074004F45B0 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 4AF7B9872C7A1FB0004F45B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +244,7 @@
 			files = (
 				4AF7B9912C7A1FB1004F45B0 /* Preview Assets.xcassets in Resources */,
 				4AF7B98E2C7A1FB1004F45B0 /* Assets.xcassets in Resources */,
+				4AF7B9B42C7A1FBA004F45B0 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AF7B9B52C7A2074004F45B0 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AF7B9B62C7A2074004F45B0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AF7B9B52C7A2074004F45B0 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AF7B97E2C7A1FB0004F45B0 /* Project object */;
 }
